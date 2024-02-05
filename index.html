@@ -12,35 +12,160 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I'm <span>Dallas</span></h1>
+                <p>Software Developer<br><br></p>
+                <h1 class="sub-title">Hi, I'm <span>Dallas</span><br><br></h1>
                 <div class="icons">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/dallastfoley"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/dallastfoley"><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.github.com/dallasfoley"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             
         </div>
     </div>
-    <div class="about">
+    <!---------------------------About----------------------------->
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="" alt="">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit molestias et corporis rem, assumenda velit, incidunt soluta dolore dicta cupiditate quos iure, nemo quo sit debitis illo ex cum magni.</p>
+                    
                 </div>
-                <div class="about-col-2"></div>
+                <div class="about-col-2">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming/Markup Languages</span></li>
+                            <div class="coding-icons">
+                                <img src="images/html-logo.png" alt="">
+                                <img src="images/logoo.png" alt="">
+                                <img src="images/js-logo.png" alt="">
+                                <img src="images/python-logo.png" alt="">
+                                <img src="images/cpp-logo.png" alt="">
+
+                            </div>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Libraries/Softwares</span></li>
+                            <div class="libs-icon">
+                                <img src="images/git-logo.png" alt="">
+                                <img src="images/numpy-logo.png" alt="">
+                                <img src="images/wx-logo.png" alt="">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id=experience>
+                        <ul>
+                            <li><span>Aug. 2022 - Dec. 2023</span><br>Undergraduate Lecture Assistant at Michigan State University, East Lanising, MI<br><br></li>
+                            <li><span>March 2021 - April 2022</span><br>Server at Sushiya, East Lanising, MI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Bachelor of Science, Mathematics |  Minor in Computer Science - Michigan State University</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!---------------------------Projects----------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae mollitia atque sapiente, ullam blanditiis perferendis? Nisi placeat quo assumenda pariatur, cupiditate esse eos, possimus vitae similique doloribus maiores commodi!</p>
+                        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Action-Sudoku Game</h3>
+                        <p>
+                            Collaborated effectively with a team to design and develop an Action Sudoku game in C++ with multiple levels 
+                            and features emphasizing object-oriented design and patterns to enhance gameplay and user experience.
+                            Utilized Gitlab for version control and project management, ensuring a smooth workflow and consistent progress.
+                        </p>
+                        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>GraphADT Implementation</h3>
+                        <p>
+                            Developed a comprehensive graph data structure in Python and NumPy, implementing various graph algorithms 
+                            including breadth-first search, depth-first search and A* search to efficiently search for nodes in a graph.
+                            Also designed an efficient system for teleportation between nodes, integrating a network of graphs for optimal routing.
+                        </p>    
+                        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/dallasfoley" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------------------Contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane" aria-hidden="true"></i>dallastfoley@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>(248)-962-5493</p>
+                <div class="social-icons">                   
+                    <a href="https://www.instagram.com/dallastfoley/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/dallastfoley/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.github.com/dallasfoley/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw-Jc5nd_Oe3-U5QWSqtJBcbBhAJHwPHPKUfcQIy9LymXBBRTFjAFQ2hQIgBNZ06s-u/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent!";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+        })
+    </script>
 </body>
 </html>
